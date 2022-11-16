@@ -31,7 +31,7 @@ SECRET_KEY = 'hfugvgufkuyofyfuftyyyrc!456789jlknkljbkh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://bontusmayor.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
