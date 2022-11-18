@@ -8,7 +8,7 @@ def get_profile_type(request):
     """
     current_user = request.user
     if current_user:
-        pro = Profile.objects.filter(user=current_user)
+        pro = Profile.objects.filter(user=current_user).first()
     
     # other details
     site_name = 'Banzi'
