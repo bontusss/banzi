@@ -16,7 +16,7 @@ def get_profile_type(request):
     email = "support@banzi.com"
     phone = "+2348118773038"
     return {
-        # 'pro': pro,
+        'pro': pro,
         'site_name': site_name,
         'description': site_description,
         'email': email,
