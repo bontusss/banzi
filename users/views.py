@@ -41,15 +41,7 @@ def sign_up(request):
     """
     Registers user and send email authentication email to the user.
     """
-    if request.method == "POST":
-        # check if cookies is enabled on the browser
-        if request.session.text_cookie_worked():
-            request.session.delete_test_cookie()
-        else:
-            # Refactor this code to show a better UI
-            return HttpResponse("Please enable Cookies and try again.")
-            
-        request.session.set_test_cookie()
+    if request.method == "POST":          
         form = SignUpForm(request.POST)
         if form.is_valid():
             user = form.save()
